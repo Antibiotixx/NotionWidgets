@@ -20,7 +20,7 @@ body{
   letter-spacing: 5px;
 }
 
-.days, .hours, .minutes, .seconds {
+.days, .hours {
   display: inline-block;
   padding: 20px;
   width: 100px;
@@ -33,15 +33,6 @@ body{
 
 .hours {
   background: #C0CA33;
-  color: #183059;
-}
-
-.minutes {
-  background: #276FBF;
-}
-
-.seconds {
-  background: #F0A202;
 }
 
 .numbers {
@@ -50,37 +41,6 @@ body{
   font-size: 4em;
   text-align: center;
 }
-
-.white {
-  position: absolute;
-  background-color:transparent;
-  height: 85px;
-  width: 75px;
-  left: 30%;
-  top: 2%;
-}
-
-.red {
-  position: absolute;
-  background-color:transparent;
-  left: 18%;
-  top: 9%;
-  height: 65px;
-  width: 70px;
- 
-}
-
-.blue {
-  position: absolute;
-  background:  #276FBF;
-  height: 80px;
-  width: 80px;
-  left: 60%;
-  top: 5%;
-
-
-}
-
 
     </style>
 </head>
@@ -93,7 +53,6 @@ body{
       <div class="hours"> 
         <div  id="hours" class="numbers"> </div>hours</div> 
       </div>
-
 </div>
 
 </body>
@@ -114,16 +73,10 @@ let timer = setInterval(function() {
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
   let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
   // display
   document.getElementById("days").innerHTML=days
   document.getElementById("hours").innerHTML=hours
-  document.getElementById("minutes").innerHTML=minutes
-  document.getElementById("seconds").innerHTML=seconds
-
-
 
 }, 1);
 </script>
