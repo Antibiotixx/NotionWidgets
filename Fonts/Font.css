@@ -1,0 +1,12 @@
+body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
+
+@font-face {
+  font-family: "Jupiter";
+  font-weight: 400;
+  src: url(https://antibiotixx.github.io/NotionWidgets/Fonts/Fontspring-DEMO-jupiter_pro_regular.woff2) format('woff2');
+}
+@font-face {
+  font-family: "Jupiter";
+  font-weight: 700;
+  src: url(https://antibiotixx.github.io/NotionWidgets/Fonts/Fontspring-DEMO-jupiter_pro_bold.woff2) format('woff2');
+}
